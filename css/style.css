@@ -1018,3 +1018,63 @@ body:after {
     color: #888888; }
     .footer a:hover {
       color: #000; }
+
+/* ==============================
+   BRAND COLOR OVERRIDES
+================================ */
+
+:root {
+  --primary-color: #1f6feb;
+  --dark-color: #0f172a;
+  --light-color: #f8fafc;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: #174ea6;
+  border-color: #174ea6;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  color: var(--dark-color);
+}
+
+/* Navbar */
+.site-navbar {
+  background: white;
+}
+
+.site-logo a,
+.site-menu .nav-link {
+  color: var(--dark-color);
+}
+
+.site-menu .nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* Hero overlay text */
+.site-blocks-cover h1,
+.site-blocks-cover p {
+  color: #ffffff;
+}
+
+/* Light sections */
+.bg-light {
+  background-color: var(--light-color) !important;
+}
+
+/* Links */
+a {
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: #174ea6;
+}
