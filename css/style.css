@@ -1078,19 +1078,3 @@ a {
 a:hover {
   color: #174ea6;
 }
-
-/* Make desktop navbar scrollable */
-.site-navigation {
-  overflow-x: auto;
-}
-
-.site-menu {
-  display: flex;
-  flex-wrap: nowrap;
-  white-space: nowrap;
-}
-
-.site-menu li {
-  flex: 0 0 auto;
-}
-
