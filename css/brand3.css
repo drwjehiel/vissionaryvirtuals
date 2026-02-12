@@ -1,0 +1,153 @@
+/* =========================================
+   VISIONARY VIRTUALS — BRAND OVERRIDES
+   SAFE VERSION (Template-Compatible)
+========================================= */
+
+/* ========= BRAND COLOR SYSTEM ========= */
+
+:root {
+  --brand-primary: #262261;     /* Deep Navy */
+  --brand-secondary: #2B3C8E;   /* Royal Blue */
+  --brand-support: #006E65;     /* Deep Teal */
+  --brand-accent: #00A99D;      /* Bright Teal */
+
+  --brand-light: #eef2f7;       /* Light section background */
+  --brand-white: #ffffff;
+  --text-muted: #6b7280;
+}
+
+/* ========= BASE ========= */
+
+body {
+  color: var(--text-muted);
+  background: var(--brand-light);
+}
+
+/* Headings */
+
+h1, h2, h3, h4, h5 {
+  color: var(--brand-primary);
+}
+
+/* Links */
+
+a {
+  color: var(--brand-secondary);
+}
+
+a:hover {
+  color: var(--brand-accent);
+}
+
+/* ========= NAVBAR ========= */
+
+.site-navbar {
+  background: var(--brand-white);
+}
+
+.site-logo a,
+.site-menu > li > a {
+  color: var(--brand-primary);
+}
+
+.site-menu > li > a:hover {
+  color: var(--brand-accent);
+}
+
+/* ========= SECTIONS ========= */
+
+.bg-light {
+  background-color: var(--brand-light) !important;
+}
+
+.section-title:after {
+  background: var(--brand-accent);
+}
+
+/* ========= PRIMARY BUTTON ========= */
+
+.btn-primary {
+  background: var(--brand-secondary);
+  border-color: var(--brand-secondary);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: var(--brand-primary);
+  border-color: var(--brand-primary);
+}
+
+/* ========= CUSTOM CTA BUTTON SYSTEM ========= */
+
+/* Primary CTA */
+
+.btn-cta-primary {
+  background: var(--brand-secondary);
+  color: #ffffff;
+  border: none;
+  border-radius: 40px;
+  padding: 14px 32px;
+  font-weight: 600;
+  box-shadow: 0 6px 16px rgba(43, 60, 142, 0.25);
+  transition: 0.25s ease;
+}
+
+.btn-cta-primary:hover {
+  background: var(--brand-primary);
+  transform: translateY(-2px);
+}
+
+/* Secondary CTA */
+
+.btn-cta-outline {
+  color: var(--brand-accent);
+  border: 2px solid var(--brand-accent);
+  background: transparent;
+  border-radius: 40px;
+  padding: 14px 32px;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.btn-cta-outline:hover {
+  background: var(--brand-accent);
+  color: #ffffff;
+}
+
+/* ========= BUTTON SPACING ========= */
+
+.btn + .btn {
+  margin-left: 14px;
+}
+
+/* ========= CONTACT SECTION FIX ========= */
+
+#contact-section {
+  background: var(--brand-light);
+}
+
+/* ========= FOOTER ========= */
+
+.footer {
+  background: var(--brand-primary);
+  color: var(--brand-white);
+}
+
+.footer a {
+  color: var(--brand-accent);
+}
+
+.footer a:hover {
+  color: var(--brand-support);
+}
+
+/* ========= SVG LOGO HOVER ========= */
+
+.site-logo svg {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.site-logo:hover svg {
+  transform: scale(1.08);
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.25));
+}
