@@ -261,3 +261,52 @@ a:hover {
 .pricing-cta {
   margin-top: 30px;
 }
+
+/* ===== VALUE SECTION ===== */
+
+.value-section {
+  background: var(--brand-light);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* Title */
+
+.value-title {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  color: var(--brand-primary);
+}
+
+/* Lead paragraph */
+
+.value-lead {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+/* Highlight revenue line */
+
+.value-highlight {
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* Closing line */
+
+.value-closing {
+  margin-top: 10px;
+  margin-bottom: 35px;
+  color: var(--text-muted);
+}
+
+/* CTA container */
+
+.value-cta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
