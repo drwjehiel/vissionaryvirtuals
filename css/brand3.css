@@ -310,3 +310,24 @@ a:hover {
   flex-wrap: wrap;
   gap: 14px;
 }
+
+/* ===== SERVICE CARDS ===== */
+
+.service-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  height: 100%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+}
+
+.service-card h4 {
+  color: var(--brand-primary);
+  margin-bottom: 10px;
+}
