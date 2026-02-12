@@ -331,3 +331,53 @@ a:hover {
   color: var(--brand-primary);
   margin-bottom: 10px;
 }
+
+/* ===== CONTACT SECTION ===== */
+
+.contact-section {
+  background: #ffffff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.contact-lead {
+  color: var(--text-muted);
+  margin-bottom: 30px;
+}
+
+/* Contact cards */
+
+.contact-card {
+  background: var(--brand-light);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+}
+
+.contact-card h5 {
+  color: var(--brand-primary);
+  margin-bottom: 10px;
+}
+
+.contact-card a {
+  font-weight: 600;
+  color: var(--brand-secondary);
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  color: var(--brand-accent);
+}
+
+/* Note text */
+
+.contact-note {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
