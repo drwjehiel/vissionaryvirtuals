@@ -104,7 +104,9 @@ a:hover {
   color: var(--brand-white);
 }
 
-.btn-brand-outline {
+/* ===== CUSTOM OUTLINE BUTTON ===== */
+
+a.btn.btn-brand-outline {
   color: var(--brand-accent);
   border: 2px solid var(--brand-accent);
   background: transparent;
@@ -114,7 +116,7 @@ a:hover {
   display: inline-block;
 }
 
-.btn-brand-outline:hover {
+a.btn.btn-brand-outline:hover {
   background: var(--brand-accent);
   color: #ffffff;
 }
