@@ -240,11 +240,12 @@ a:hover {
   border: 2px solid var(--brand-accent);
   background: transparent;
   border-radius: 30px;
-  padding: 10px 30px;
+  padding: 12px 28px;
   font-weight: 600;
+  display: inline-block;
 }
 
 .btn-brand-outline:hover {
   background: var(--brand-accent);
-  color: #fff;
+  color: #ffffff;
 }
