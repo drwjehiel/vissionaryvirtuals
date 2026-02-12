@@ -229,3 +229,8 @@ a:hover {
   }
 
 }
+
+.bg-contact {
+  background: var(--brand-secondary);
+  color: var(--brand-white);
+}
