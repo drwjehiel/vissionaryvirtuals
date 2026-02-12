@@ -1,12 +1,11 @@
 /* ==============================
-   VISIONARY VIRTUALS BRAND CSS
+   GLOBAL BRAND COLOR FIX
+   (Overrides old template colors)
 ================================ */
-
-/* ===== GLOBAL COLOR SYSTEM ===== */
 
 :root {
 
-  /* BRAND COLORS */
+  /* BRAND PALETTE */
   --brand-primary: #262261;     /* Deep Navy */
   --brand-secondary: #2B3C8E;   /* Royal Blue */
   --brand-support: #006E65;     /* Deep Teal */
@@ -20,30 +19,21 @@
 
 }
 
-/* ===== BASE ===== */
-
-html {
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-}
+/* ===== TEXT ===== */
 
 body {
-  font-family: "Jost", sans-serif;
-  line-height: 1.7;
   color: var(--text-muted);
   background: var(--brand-light);
-  font-size: 1rem;
 }
 
 h1, h2, h3, h4, h5 {
   color: var(--brand-primary);
-  font-weight: 700;
 }
+
+/* ===== LINKS ===== */
 
 a {
   color: var(--brand-secondary);
-  text-decoration: none;
-  transition: 0.3s ease;
 }
 
 a:hover {
@@ -52,180 +42,59 @@ a:hover {
 
 /* ===== BUTTONS ===== */
 
-.btn {
-  border-radius: 30px;
-  padding: 10px 28px;
-  font-weight: 600;
-  transition: 0.3s ease;
-}
-
-.btn-primary {
+.btn.btn-primary {
   background: var(--brand-secondary);
-  border: none;
-  color: var(--brand-white);
+  border-color: var(--brand-secondary);
 }
 
-.btn-primary:hover {
+.btn.btn-primary:hover {
   background: var(--brand-primary);
-  transform: translateY(-2px);
+  border-color: var(--brand-primary);
 }
 
 /* ===== NAVBAR ===== */
 
 .site-navbar {
   background: var(--brand-white);
-  border-bottom: 1px solid #e5e7eb;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 }
 
-.site-logo a {
+.site-logo a,
+.site-menu > li > a {
   color: var(--brand-primary);
-  font-weight: 700;
-  font-size: 1.5rem;
 }
 
-.site-menu .nav-link {
-  color: var(--brand-primary);
-  font-weight: 500;
-  padding: 5px 20px;
-}
-
-.site-menu .nav-link:hover {
+.site-menu > li > a:hover {
   color: var(--brand-accent);
 }
 
-/* ===== HERO SECTION ===== */
+/* Sticky navbar colors */
 
-.site-blocks-cover {
-  background: linear-gradient(
-    135deg,
-    var(--brand-primary),
-    var(--brand-secondary)
-  );
-  color: var(--brand-white);
-  position: relative;
-  overflow: hidden;
+.sticky-wrapper.is-sticky .site-navbar .site-logo a {
+  border-color: var(--brand-primary);
+  color: var(--brand-primary);
 }
 
-.site-blocks-cover h1 {
-  color: var(--brand-white);
-  font-size: 3rem;
-}
-
-.site-blocks-cover .lead {
-  color: rgba(255, 255, 255, 0.9);
+.sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover {
+  color: var(--brand-accent) !important;
 }
 
 /* ===== SECTIONS ===== */
 
-.site-section {
-  padding: 6rem 0;
-  background: var(--brand-white);
-}
-
-.site-section.bg-light {
-  background: var(--brand-light);
-}
-
-.section-title {
-  position: relative;
-  padding-bottom: 20px;
-}
-
-.section-title::after {
-  content: "";
-  width: 60px;
-  height: 3px;
+.section-title:after {
   background: var(--brand-accent);
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
-/* ===== SERVICES ===== */
-
-.service {
-  background: var(--brand-white);
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.05);
-  transition: 0.3s ease;
-}
-
-.service:hover {
-  transform: translateY(-5px);
-}
-
-.service h3 {
-  color: var(--brand-secondary);
-}
-
-/* ===== PRICING ===== */
-
-.pricing-box {
-  background: var(--brand-white);
-  padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 12px 40px rgba(0,0,0,0.08);
-}
-
-.pricing-box h3 {
-  color: var(--brand-primary);
-}
-
-/* ===== CONTACT ===== */
-
-#contact-section {
-  background: var(--brand-secondary);
-  color: var(--brand-white);
-}
-
-#contact-section h2,
-#contact-section p,
-#contact-section a {
-  color: var(--brand-white);
+.bg-light {
+  background-color: var(--brand-light) !important;
 }
 
 /* ===== FOOTER ===== */
 
+.site-footer,
 .footer {
   background: var(--brand-primary);
-  color: var(--brand-white);
-  padding: 40px 0;
-  text-align: center;
-}
-
-.footer a {
-  color: var(--brand-accent);
 }
 
 .footer a:hover {
-  color: var(--brand-support);
-}
-
-/* ===== SVG LOGO HOVER ===== */
-
-.site-logo svg {
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.site-logo:hover svg {
-  transform: scale(1.08);
-  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.25));
-}
-
-/* ===== RESPONSIVE ===== */
-
-@media (max-width: 768px) {
-
-  .site-blocks-cover h1 {
-    font-size: 2rem;
-  }
-
-  .site-section {
-    padding: 4rem 0;
-  }
-
+  color: var(--brand-accent);
 }
